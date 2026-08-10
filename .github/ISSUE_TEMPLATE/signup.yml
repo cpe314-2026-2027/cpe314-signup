@@ -1,0 +1,35 @@
+name: CPE 314 Signup
+description: Submit your info once so your instructor can create your course repository.
+title: "[Signup] "
+labels: ["signup"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this in **once**, at the start of the term. Your GitHub account is automatically
+        recorded as the author of this issue — you don't need to type your username anywhere.
+  - type: input
+    id: full_name
+    attributes:
+      label: Full Name
+      description: Type it exactly as it appears on the official class list (LAST NAME, First Name).
+      placeholder: "DELA CRUZ, Juan"
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section (EDP code)
+      description: Pick the section you're actually enrolled in.
+      options:
+        - "69323 (MWF 6:30–7:30pm)"
+        - "69167 (Saturday 8:00–11:00am)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I will use this same GitHub account for the entire semester, for both the individual assignments and the group project.
+          required: true
