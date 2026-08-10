@@ -19,11 +19,11 @@ body:
   - type: dropdown
     id: section
     attributes:
-      label: Section (EDP code)
-      description: Pick the section you're actually enrolled in.
+      label: Section
+      description: Pick your Lecture schedule (not the Lab) - whichever section you're actually enrolled in.
       options:
-        - "69323 (MWF 6:30–7:30pm)"
-        - "69167 (Saturday 8:00–11:00am)"
+        - "Section 3A - EDP 69167 (Lecture, Sat 8:00-11:00 AM)"
+        - "Section 3B - EDP 69323 (Lecture, MWF 6:30-7:30 PM)"
     validations:
       required: true
   - type: checkboxes
